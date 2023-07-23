@@ -11,7 +11,7 @@ contract StewardCertificate is ERC721 {
     // Store the metadata for each token
     mapping(uint256 => string) private _metadata;
 
-    constructor() ERC721("Ethix Steward Certificate", "ESTC") {
+    constructor(string memory name, string memory symbol) ERC721(name, symbol) {
         // solhint-disable-previous-line no-empty-blocks
     }
 
