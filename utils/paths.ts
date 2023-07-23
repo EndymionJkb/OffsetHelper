@@ -99,4 +99,14 @@ export const routerAddresses = {
   polygon: "0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506", // sushiswap
 };
 
+export const offsetHelperAddresses = {
+  celo: "0xC3f8CB0F188A0ADB3216f8d05EaB3FAD78cc8413",
+  mumbai: "0xcf240660E6802487Ba8e3791075862B79eC255cC",
+  polygon: "0xe932D677B732e3C949596dFa0034B0bd695DC79c",
+}
+
+export const stewardTokens = {
+  celo: "0x15501a485990d4586930ca7F30Be6C6cd90354b2",
+}
+
 export default paths;
