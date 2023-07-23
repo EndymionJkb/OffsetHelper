@@ -23,3 +23,40 @@ With the OffsetHelper contract, the user can do all this in a single transaction
 ## Deployments
 
 For current deployments, see the `./deployments` folder.
+
+## OffsetHelper
+
+The `OffsetHelper` contract implements helper functions that simplify the carbon offsetting (retirement) process.
+
+See [./docs/OffsetHelper.md](./docs/OffsetHelper.md) for detailed documentation.
+
+### Development
+
+## Preqrequisites
+
+1. Install the required packages:
+   ```
+   yarn
+   ```
+2. Copy `.env.example` to `.env` and modify values of the required environment variables:
+   1. `POLYGON_URL`/`MUMBAI_URL` to specify custom RPC endpoints for Polygon Mainnet, respectively, the Mumbai Testnet.
+   2. `PRIVATE_KEY` and `POLYGONSCAN_KEY` in order to deploy contract and publish source code on [polygonscan](https://polygonscan.com).
+
+## Commands
+
+```bash
+# install dependencies
+yarn install
+
+# test the contract
+yarn test
+
+# generate documentation
+yarn doc
+
+# deploy the contract
+yarn hardhat deploy --network <network>
+
+# verify the contract
+yarn hardhat verify:offsetHelper --network mumbai --address <address where Offset Helper was deployed>
+```
